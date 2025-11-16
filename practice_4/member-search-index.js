@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"MathUtils","l":"isEven(int)"},{"p":"<Unnamed>","c":"MathUtils","l":"MathUtils()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"MathUtils","l":"square(int)"}]
