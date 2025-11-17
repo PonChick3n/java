@@ -1,7 +1,7 @@
 public class BooleanDemo {
     public static void main(String[] args) {
 
-        // --- 1. Конструкторы (устаревшие) ---
+        // --- 1. Конструкторы ---
         Boolean b1 = new Boolean(true);
         Boolean b2 = new Boolean("true");
         System.out.println("Constructors: " + b1 + ", " + b2);
