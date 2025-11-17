@@ -34,7 +34,7 @@ public class SwitchTest {
             case 4: System.out.println("Integer: 4"); break;
         }
 
-        // 6. String (с Java 7)
+        // 6. String
         String str = "hello";
         switch (str) {
             case "hello": System.out.println("String: hello"); break;
@@ -46,7 +46,7 @@ public class SwitchTest {
             case TUE: System.out.println("enum: TUE"); break;
         }
 
-        // 8. var (если тип - допустимый)
+        // 8. var (если тип допустимый)
         var x = 5; // int - OK
         switch (x) {
             case 5: System.out.println("var(int): 5"); break;
