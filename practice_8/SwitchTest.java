@@ -46,8 +46,8 @@ public class SwitchTest {
             case TUE: System.out.println("enum: TUE"); break;
         }
 
-        // 8. var (если тип — допустимый)
-        var x = 5; // int → OK
+        // 8. var (если тип - допустимый)
+        var x = 5; // int - OK
         switch (x) {
             case 5: System.out.println("var(int): 5"); break;
         }
