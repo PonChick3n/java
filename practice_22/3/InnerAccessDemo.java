@@ -80,17 +80,16 @@ public class InnerAccessDemo {
 
         // Попробуем создать внутренние классы извне Outer:
 
-        // PrivateInner p2 = new PrivateInner(); ❌ НЕ РАБОТАЕТ — private!
+        // PrivateInner p2 = new PrivateInner(); не работает - private
 
         // Но можно создать public inner:
-        Outer.PublicInner pub2 = outer.new PublicInner(); // ✔ работает
+        Outer.PublicInner pub2 = outer.new PublicInner(); // работает
         System.out.println(pub2.info);
 
-        // DefaultInner d2 = new Outer.DefaultInner(); ❌ НЕ РАБОТАЕТ в другом пакете (но здесь один файл)
-        Outer.DefaultInner d2 = outer.new DefaultInner(); // ✔ работает (тот же пакет)
+        Outer.DefaultInner d2 = outer.new DefaultInner(); // работает (тот же пакет)
         System.out.println(d2.msg);
 
-        Outer.ProtectedInner pr2 = outer.new ProtectedInner(); // ✔ здесь работает
+        Outer.ProtectedInner pr2 = outer.new ProtectedInner(); // здесь работает
         System.out.println(pr2.number);
     }
 }
