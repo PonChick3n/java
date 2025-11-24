@@ -48,48 +48,11 @@ class Outer {
         System.out.println(pub.info);
         pub.privateInfo(); // можно вызвать private метод
     }
-
-    public static void main(String[] args) {
-        Outer outer = new Outer();
-        outer.testAccess();
-
-        System.out.println("\n=== Creating inner classes outside Outer ===");
-
-        // Попробуем создать внутренние классы извне Outer:
-
-        // PrivateInner p2 = new PrivateInner(); не работает - private
-
-        // Но можно создать public inner:
-        Outer.PublicInner pub2 = outer.new PublicInner(); // работает
-        System.out.println(pub2.info);
-
-        Outer.DefaultInner d2 = outer.new DefaultInner(); // работает (тот же пакет)
-        System.out.println(d2.msg);
-
-        Outer.ProtectedInner pr2 = outer.new ProtectedInner(); // здесь работает
-        System.out.println(pr2.number);
-    }
 }
 
 public class InnerAccessDemo {
     public static void main(String[] args) {
         Outer outer = new Outer();
         outer.testAccess();
-
-        System.out.println("\n=== Creating inner classes outside Outer ===");
-
-        // Попробуем создать внутренние классы извне Outer:
-
-        // PrivateInner p2 = new PrivateInner(); не работает - private
-
-        // Но можно создать public inner:
-        Outer.PublicInner pub2 = outer.new PublicInner(); // работает
-        System.out.println(pub2.info);
-
-        Outer.DefaultInner d2 = outer.new DefaultInner(); // работает (тот же пакет)
-        System.out.println(d2.msg);
-
-        Outer.ProtectedInner pr2 = outer.new ProtectedInner(); // здесь работает
-        System.out.println(pr2.number);
     }
 }
